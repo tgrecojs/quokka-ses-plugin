@@ -1,0 +1,28 @@
+{
+  "name": "quokka-ses-plugin",
+  "version": "1.0.0",
+  "description": "plugin for using quokka.js with the SES shim",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgrecojs/quokka-endojs-plugin.git"
+  },
+  "keywords": [
+    "Quokka.js",
+    "Wallaby.js",
+    "Endo",
+    "SES"
+  ],
+  "author": "Thomas Greco <tgrecojs@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ses": "^0.18.1"
+  },
+  "bugs": {
+    "url": "https://github.com/tgrecojs/quokka-endojs-plugin/issues"
+  },
+  "homepage": "https://github.com/tgrecojs/quokka-endojs-plugin#readme"
+}
