@@ -13,14 +13,12 @@ const fold =
 const foldAll = fold(All);
 const getValue = ({ value }) => value;
 
-getValue(foldAll(types)); //?
-
 module.exports = {
   before: () => {
     const types = [Array, Object, Number, Map, WeakMap, BigInt, Intl].map(
       isFrozen
     );
-    if (getValue(foldAll(types))) {
+    if (!getValue(foldAll(types))) {
       const lockdown = require("ses");
       lockdown({
         domainTaming: "unsafe",
