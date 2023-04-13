@@ -18,11 +18,11 @@
   ],
   "author": "Thomas Greco <tgrecojs@protonmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "ses": "^0.18.1"
-  },
   "bugs": {
     "url": "https://github.com/tgrecojs/quokka-endojs-plugin/issues"
   },
-  "homepage": "https://github.com/tgrecojs/quokka-endojs-plugin#readme"
+  "homepage": "https://github.com/tgrecojs/quokka-endojs-plugin#readme",
+  "dependencies": {
+    "@endo/init": "^0.5.54"
+  }
 }

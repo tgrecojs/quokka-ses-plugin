@@ -1,7 +1,6 @@
-require('ses')
+"use strict";
 module.exports = {
   before: () => {
-     lockdown({ domainTaming: 'unsafe' });
-     return 'environment locked down.'
- }
-}
+    require("./index").checkEnv();
+  },
+};
