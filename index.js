@@ -1,7 +1,7 @@
-require('ses')
+"use strict";
 module.exports = {
   before: () => {
-     lockdown({ domainTaming: 'unsafe' });
-     return 'environment locked down.'
- }
-}
+    const lockdown = require("@endo/init/legacy");
+    return !Object.isFrozen(Array) && lockdown();
+  },
+};
